@@ -8,9 +8,6 @@ interface Params {
   city: string;
 }
 
-// export default async function CityWeatherPage({ params }: { params: Params }) {
-//   const city = decodeURIComponent(params.city);
-//   const apiKey = process.env.OPENWEATHER_API_KEY;
 export default async function CityWeatherPage(props: { params: Promise<Params> }) {
   const { city } = await props.params;
   const decodedCity = decodeURIComponent(city);

@@ -1,3 +1,5 @@
+//utils/weatherUtils.ts
+
 export const getBackgroundClass = (weather: string) => {
   switch (weather.toLowerCase()) {
     case "clear":
